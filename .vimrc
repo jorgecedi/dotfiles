@@ -56,7 +56,7 @@ autocmd FileType yaml setlocal sw=2 sts=2
 
 if &t_Co > 2 || has("gui_running")
    syntax on
-   silent! color elflord
+   silent! color pablo
    set background=dark
    set guifont=DroidSansMono\ NF:h11
    set guifontwide=DroidSansMono\ NF:h11
@@ -163,9 +163,9 @@ noremap <Space>wm :on<CR>
 noremap <Space>fed :e $MYVIMRC<CR>
 noremap <Space>feR :so %<CR>
 noremap <Space>pp :set paste!<CR>
-noremap <Space>gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+noremap <Space>gd <C-]>
 
-let g:airline_theme='minimalist'
+let g:airline_theme='dracula'
 
 set clipboard^=unnamed
 set clipboard^=unnamedplus
